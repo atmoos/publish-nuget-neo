@@ -1,5 +1,3 @@
-node_modules/
-action.js*
 package-lock.json
 /node_modules/.bin
 /node_modules/.package-lock.json
