@@ -290,7 +290,7 @@ class Action {
     publishPackageSpecificAsync(nuGetSource, nugetKey, packagePath, includeSymbols) {
         return __awaiter(this, void 0, void 0, function* () {
             Log.info(`[publishPackageAsync] Publishing package "${packagePath}"`);
-            let params = ["dotnet", "nuget", "push", packagePath, "-s", `${nuGetSource}/v3/index.json`, "--skip-duplicate", "--force-english-output"];
+            let params = ["nuget", "push", packagePath, "-s", `${nuGetSource}/v3/index.json`, "--skip-duplicate", "--force-english-output"];
             if (!includeSymbols)
                 params.push("--no-symbols");
             // Separate param array that is safe to log (no nuget key)
